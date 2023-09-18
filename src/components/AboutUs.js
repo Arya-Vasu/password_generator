@@ -1,7 +1,6 @@
 // AboutUs.js
 import React from "react";
 import "../styles.css";
-import Vision from "./Vision";
 import MilestoneCard from "./MilestoneCard";
 
 const AboutUs = () => {
@@ -16,7 +15,7 @@ const AboutUs = () => {
           with a blend of innovation and technology. Join us in transforming the
           way we connect, engage, and inspire.
         </p>
-<Vision/>
+{/* <Vision/> */}
         <h2>Our Values</h2>
         <p>
           Transparency, Creativity, Excellence – these values drive everything

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  // faFacebook,
   faLinkedinIn,
   faTwitter,
   faInstagram,
@@ -10,8 +11,8 @@ import {
 const SocialMediaIcon = ({isSocialOpen}) => {
 
   return (
-      <nav className={`${!isSocialOpen ? "social-icons1" : "social-icons2"}`}>
-        <ul className="social-icons-list">
+      <div className={`${!isSocialOpen ? "social-icons1" : "social-icons2"}`}>
+        <ul className="social-links social-icons-list">
           <li className="social-icons-list-items">
             <a href="#" className="twitter">
               <FontAwesomeIcon icon={faTwitter} />
@@ -28,7 +29,7 @@ const SocialMediaIcon = ({isSocialOpen}) => {
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
   );
 };
 

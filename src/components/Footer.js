@@ -6,20 +6,19 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-left">
-        <div className="logo logo-footer">ViralHood</div>
+        <div className="logo logo-footer">V-Frame</div>
         <div className="reach-us">
           <h3>REACH US</h3>
           <p className="footer-bold">Administrative Address</p>
           <p className="footer-custom">
-            ViralHood(LAKVINS ENTERTAINMENT MEDIA PRIVATE LIMITED) Sector
-            22,Gurgaon- 122001
+            V-Frame - Office No, Street, Colony, City, State - [PIN]
           </p>
           <p className="footer-bold">Registered Address</p>
           <p className="footer-custom">
-            70/5 CP MISSION COMPOUND JHANSI UP 284003
+            Office No, Street, Colony, City, State - [PIN]
           </p>
-          <p className="footer-custom">+91 7007789794</p>
-          <p className="footer-custom">viralhood.in</p>
+          <p className="footer-custom">+91 XXXXXXXXXX</p>
+          <p className="footer-custom">vframe.in</p>
         </div>
       </div>
 
@@ -27,12 +26,14 @@ const Footer = () => {
         <div className="follow-us">
           <h3>FOLLOW US</h3>
           <p className="footer-custom">
-            Join the Viralhood Frenzy! Be the First to Catch the Buzz.
+            Shreya to provide the line.
           </p>
           <p className="footer-custom">
-            Follow Us for the Latest Viral Sensations!
+            Shreya to provide the line.
           </p>
-          <SocialMediaIcon />
+          <div className="footer-social-icons">
+            <SocialMediaIcon isSocialOpen={true} />
+          </div>
         </div>
       </div>
     </footer>

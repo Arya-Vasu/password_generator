@@ -1,43 +1,28 @@
-// HomePage.js
-import React from "react";
-// import Header from "./Header";
-import WhatWeDo from "./WhatWeDo";
+import React, { useState } from "react";
+import TechnologyWeWorkOnNew from "./TechnologyWeWorkOnNew";
 import "../styles.css";
-import ClientWeWorkWith from "./ClientWeWorkWith";
-import Vision from "./Vision";
-import InfluencerList from "./InfluencerList";
-// import { startTransition } from "react";
+// import ClientWeWorkWith from "./ClientWeWorkWith";
+import VisionMission from "./VisionMission";
 
 const HomePage = () => {
+
   return (
     <div className="homepage">
       <main>
         <section className="hero">
           <div className="hero-content">
-            <div className="hero-bg">
-              <h1>#ViralHood</h1>
-              <p>
-                We create unforgettable experiences for your special events.
-              </p>
-              <button>Learn More</button>
+            <div className="hero-bg" style={{textAlign: 'center'}}>
+              <h1>#V-Frame</h1>
+              <p>Want web-site? We'll give you.</p>
             </div>
-            <div className="video-banner">
-              <video
-                id="heroVideo"
-                src="https://www.datocms-assets.com/75751/1675290972-homenewcreators.mp4"
-                // class="ImageHero-module--video--bbde8"
-                autoplay=""
-                loop=""
-                playsinline=""
-                tabindex="-1"
-              ></video>
-            </div>
+            {/* <div className="influencersOnHomeBanner">
+            </div> */}
           </div>
         </section>
-        <InfluencerList />
-        <Vision />
-        <WhatWeDo />
-        <ClientWeWorkWith />
+        <VisionMission />
+        <h1 style={{textAlign: 'center'}}>Technologies We Use</h1>
+        <TechnologyWeWorkOnNew />
+        {/* <ClientWeWorkWith /> */}
       </main>
     </div>
   );

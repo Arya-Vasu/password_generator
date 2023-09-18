@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { InfluencerCard } from "./InfluencerCard";
 
-const InfluencerList = () => {
+const TechnologyWeWorkOn = () => {
   const [influencers, setInfluencers] = useState([]);
 
  
@@ -69,4 +69,4 @@ const InfluencerList = () => {
     </div>
   );
 };
-export default InfluencerList;
+export default TechnologyWeWorkOn;

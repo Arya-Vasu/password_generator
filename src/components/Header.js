@@ -1,26 +1,26 @@
 import React from "react";
 import SocialMediaIcon from "./SocialMediaIcon";
-import NavbarItems from "./NavbarItems.js";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faEllipsisV } from "@fortawesome/free-solid-svg-icons";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faBars, faEllipsisV,  } from "@fortawesome/free-solid-svg-icons";
+import NavbarItems from "./NavbarItems.js";
 
 const Header = ({
   isMenuOpen,
-  setIsMenuOpen,
   toggleMenu,
-  isSocialOpen,
-  setIsSocialOpen,
-  toggleSocial,
+  toggleSocial
 }) => {
   return (
-    <header className="global_header">
+    <header className="logo global_header">
       <FontAwesomeIcon
-        icon={faBars}
+        icon={isMenuOpen ? faArrowLeft : faBars}
         className="hamburger-menu"
         onClick={toggleMenu}
       />
-      <h1>ViralHood</h1>
+      {/* {console.log(isMenuOpen)} */}
+      <Link className="logo" to="/">
+        <h1>V-Frame</h1>
+      </Link>
       <NavbarItems />
       <FontAwesomeIcon
         icon={faEllipsisV}

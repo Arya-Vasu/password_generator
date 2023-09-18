@@ -7,16 +7,16 @@ const MilestoneCard = () => {
       <h2>Milestones</h2>
       <div className="milestones">
         <div className="milestone">
-          <div className="milestone-icon">20k+</div>
-          <p>Educators</p>
+          <div className="milestone-icon">10K+</div>
+          <p>Creators</p>
         </div>
         <div className="milestone">
-          <div className="milestone-icon">1L+</div>
-          <p>Courses Sold</p>
+          <div className="milestone-icon">100M+</div>
+          <p>Audiece Reach</p>
         </div>
         <div className="milestone">
           <div className="milestone-icon">100+</div>
-          <p>Strong Team</p>
+          <p>Satisfied Clients</p>
         </div>
       </div>
     </div>

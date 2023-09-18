@@ -6,24 +6,24 @@ const NavbarItems = ({isMenuOpen}) => {
   return (
       <nav className={`${isMenuOpen ? "custom-nav-open" : "custom-nav"}`}>
         <ul className="navbar-menu-list">
-          <li className="navbar-menu-list-items">
+          <li className="nav-link navbar-menu-list-items">
             <Link className="a-custom" to="/">
               Home
             </Link>
           </li>
-          <li className="navbar-menu-list-items">
-            <Link className="a-custom" to="/">
-              About
+          <li className="nav-link navbar-menu-list-items">
+            <Link className="a-custom" to="/about">
+              About Us
             </Link>
           </li>
-          <li className="navbar-menu-list-items">
-            <Link className="a-custom" to="/">
-              Services
+          <li className="nav-link navbar-menu-list-items">
+            <Link className="a-custom" to="/team">
+              Our Team
             </Link>
           </li>
-          <li className="navbar-menu-list-items">
-            <Link className="a-custom" to="/">
-              Contact
+          <li className="nav-link navbar-menu-list-items">
+            <Link className="a-custom" to="/contact">
+              Contact Us
             </Link>
           </li>
         </ul>
